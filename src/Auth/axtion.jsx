@@ -18,7 +18,7 @@ const getData = () => async (dispatch) => {
 
     dispatch(reqApartmentData())
 
-    axios.get("https://unit6fullstackproject.herokuapp.com/flat").then((res) => {
+    axios.get("https://pranjalapi.herokuapp.com/flat").then((res) => {
 
         console.log(res.data, "res")
         dispatch(getApartmentData(res.data.flat))
@@ -34,7 +34,7 @@ const getResidentData = (id) => async (dispatch) => {
 
     dispatch(reqApartmentData())
 
-    axios.get(`https://unit6fullstackproject.herokuapp.com/flat/${id}`).then((res) => {
+    axios.get(`https://pranjalapi.herokuapp.com/flat/${id}`).then((res) => {
 
         console.log(res.data, "res")
         dispatch(gotResidentData(res.data))
@@ -57,7 +57,7 @@ const login = (email, password) => async (dispatch) => {
 
         dispatch(loginReq({ msg: "Loading" }))
         console.log(email, password)
-        const res = await axios.post("https://unit6fullstackproject.herokuapp.com/login", {
+        const res = await axios.post("https://pranjalapi.herokuapp.com/login", {
 
             email,
             password
