@@ -8,7 +8,7 @@ export const Header = () => {
 
         <>
 
-            <ReactBootStrap.Navbar bg="dark" variant="primary">
+            <ReactBootStrap.Navbar bg="success" variant="primary">
                 <ReactBootStrap.Container>
                     <ReactBootStrap.Navbar.Brand style={{ textDecoration: 'none', color: "white" }} >Apartment </ReactBootStrap.Navbar.Brand>
                     <ReactBootStrap.Nav className="me-auto">
